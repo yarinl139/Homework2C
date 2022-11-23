@@ -42,7 +42,6 @@ int main()
         printf("\n");
     }
     }
-    print_mat(mat);
     printf("\n");
     return 0;
 }
