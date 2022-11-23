@@ -11,9 +11,11 @@ void insert(int mat [10][10])
     {
 
         for (int j = 0; j < 10; j++)
-        {
-             scanf("%d",&weight);
+        {  
+             if(scanf("%d",&weight)==1)
+             {
              mat[i][j] = weight;
+             }
         }
     }
     
@@ -23,7 +25,7 @@ void has_path(int mat [10][10],int a, int b)
 {
     if(shortest_path(mat,a,b) == -1)
     {
-       printf("False");
+    printf("False");
     }
     else
     { 

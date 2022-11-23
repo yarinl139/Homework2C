@@ -29,17 +29,20 @@ int main()
         insert(mat);
     }
     else if (ch == 'B'){
-        scanf("%d",&x);
-        scanf("%d",&y);
+
+        if(scanf("%d",&x)==1 && scanf("%d",&y) ==1)
+        {
         has_path(mat,x,y);
         printf("\n");
+        }
     }
     else if (ch == 'C')
     {
-        scanf("%d",&x);
-        scanf("%d",&y);
+        if(scanf("%d",&x)==1 && scanf("%d",&y) ==1)
+        {
         printf("%d",shortest_path(mat,x,y));
         printf("\n");
+        }
     }
     }
     return 0;
