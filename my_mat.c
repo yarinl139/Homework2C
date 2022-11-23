@@ -34,12 +34,26 @@ void has_path(int mat [10][10],int a, int b)
 
 int shortest_path(int mat [10][10],int a, int b)
 { 
+    
     //Using Floyd Warshall's algorithm
     int dist[10][10];
     for (int i = 0; i < 10; i++)
         for (int j = 0; j < 10; j++)
             dist[i][j] = mat[i][j];
 
+    for (int i = 0; i < 10; i++)
+    {
+        for (int j = 0; j < 10; j++)
+        {
+            if(dist[i][j]==0)
+            {
+                dist[i][j] = INT_MAX;
+            }
+        }
+    
+
+    }
+    print_mat(dist);
     for (int k = 0; k < 10; k++) {
 
        for (int i = 0; i < 10; i++) {

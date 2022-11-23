@@ -9,19 +9,13 @@ void init(int mat[10][10])
     {
         for(int j=0;j<10;j++)
         {
-            if(i==j)
-            {
-                mat[i][j] = 0;
-            }
-            else {
-                mat[i][j] = INT_MAX;
-            }
+          mat[i][j] = 0;
         }
     }
 }
 
 
-void main()
+int main()
 {
     int mat[10][10];
     init(mat);
@@ -44,7 +38,11 @@ void main()
     {
         scanf("%d",&x);
         scanf("%d",&y);
-        printf("%d\n",shortest_path(mat,x,y));
+        printf("%d",shortest_path(mat,x,y));
+        printf("\n");
     }
     }
+    print_mat(mat);
+    printf("\n");
+    return 0;
 }
