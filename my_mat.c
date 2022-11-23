@@ -12,7 +12,7 @@ void insert(int mat [10][10])
 
         for (int j = 0; j < 10; j++)
         {  
-             if(scanf("%d",&weight)==1)
+             if(scanf("%d",&weight)!=EOF)
              {
              mat[i][j] = weight;
              }
