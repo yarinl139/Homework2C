@@ -20,17 +20,18 @@ int main()
     int mat[10][10];
     init(mat);
     char ch;
-    int x,y,z;
+    int x,y;
     while(ch!='D')
     {
-    scanf(" %c",&ch);
+    if(scanf(" %c",&ch)!=EOF)
+    {
     if (ch == 'A')
     {
         insert(mat);
     }
     else if (ch == 'B'){
 
-        if(scanf("%d",&x)==1 && scanf("%d",&y) ==1)
+        if(scanf("%d",&x)!=EOF && scanf("%d",&y) !=EOF)
         {
         has_path(mat,x,y);
         printf("\n");
@@ -38,11 +39,12 @@ int main()
     }
     else if (ch == 'C')
     {
-        if(scanf("%d",&x)==1 && scanf("%d",&y) ==1)
+        if(scanf("%d",&x)!=EOF && scanf("%d",&y) !=EOF)
         {
         printf("%d",shortest_path(mat,x,y));
         printf("\n");
         }
+    }
     }
     }
     return 0;
