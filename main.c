@@ -1,5 +1,6 @@
 #include "stdio.h"
 #include "my_mat.h"
+
 #define INT_MAX 999999
 
 
@@ -10,12 +11,23 @@ int main()
     int mat[10][10];
     char ch;
     int x,y;
+    int weight;
     while(ch!='D')
     {
     scanf("%c",&ch);
     if (ch == 'A')
     {
-        insert(mat);
+        
+        for (int i = 0; i < 10; i++)
+        {
+
+            for (int j = 0; j < 10; j++)
+            {  
+                scanf("%d",&weight);
+                mat[i][j] = weight;
+             
+        }
+    }
     }
     else if (ch == 'B'){
 
