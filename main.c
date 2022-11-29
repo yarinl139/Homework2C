@@ -32,7 +32,8 @@ int main()
         printf("%d",shortest_path(mat,x,y));
         printf("\n");
     }
-    }
     scanf("%c",&ch);
+    }
+    
     return 0;
 }
