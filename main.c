@@ -9,10 +9,10 @@ int main()
 {
     int mat[10][10];
     char ch;
-    int x,y,z;
+    int x,y;
     while(ch!='D')
     {
-    scanf(" %c",&ch);
+    scanf("%c",&ch);
     if (ch == 'A')
     {
         insert(mat);
