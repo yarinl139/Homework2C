@@ -21,9 +21,7 @@ int main()
     init(mat);
     char ch;
     int x,y;
-    while(ch!='D')
-    {
-    if(scanf(" %c",&ch)!=EOF)
+    while(scanf(" %c",&ch)!=EOF && ch!='D')
     {
     if (ch == 'A')
     {
@@ -44,7 +42,6 @@ int main()
         printf("%d",shortest_path(mat,x,y));
         printf("\n");
         }
-    }
     }
     }
     return 0;

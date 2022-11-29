@@ -14,7 +14,7 @@ void insert(int mat [10][10])
         {  
              if(scanf("%d",&weight)!=EOF)
              {
-             mat[i][j] = weight;
+                mat[i][j] = weight;
              }
         }
     }
