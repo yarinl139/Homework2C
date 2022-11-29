@@ -29,7 +29,7 @@ int main()
     }
     else if (ch == 'B'){
 
-        if(scanf("%d",&x)!=EOF && scanf("%d",&y) !=EOF)
+        if(scanf("%d" "%d",&x,&y) !=EOF)
         {
         has_path(mat,x,y);
         printf("\n");
@@ -37,7 +37,7 @@ int main()
     }
     else if (ch == 'C')
     {
-        if(scanf("%d",&x)!=EOF && scanf("%d",&y) !=EOF)
+        if(scanf("%d" "%d",&x,&y) !=EOF)
         {
         printf("%d",shortest_path(mat,x,y));
         printf("\n");
