@@ -1,9 +1,25 @@
 #include "my_mat.h"
 #include "stdio.h"
+
 #define INT_MAX 999999 
 
 int shortest_path(int mat [10][10],int a, int b);
 
+void insert(int mat [10][10])
+{
+    int weight;
+    for (int i = 0; i < 10; i++)
+    {
+
+        for (int j = 0; j < 10; j++)
+        {  
+             scanf("%d",&weight);
+             mat[i][j] = weight;
+             
+        }
+    }
+    
+}
 
 int has_path(int mat [10][10],int a, int b)
 {
