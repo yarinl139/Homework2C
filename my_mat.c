@@ -12,10 +12,8 @@ void insert(int mat [10][10])
 
         for (int j = 0; j < 10; j++)
         {  
-             if(scanf("%d",&weight)!=EOF)
-             {
-                mat[i][j] = weight;
-             }
+            
+             mat[i][j] = weight;
         }
     }
     
@@ -69,4 +67,16 @@ int shortest_path(int mat [10][10],int a, int b)
     if (dist[a][b]!=INT_MAX)
         return dist[a][b];
     return -1;
+}
+
+void print_mat(int mat[10][10])
+{
+    for(int i=0;i<10;i++)
+    {
+        for(int j=0;j<10;j++)
+        {
+            printf("%d ",mat[i][j]);
+        }
+        printf("\n");
+    }
 }
