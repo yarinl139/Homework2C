@@ -21,7 +21,9 @@ int main()
     init(mat);
     char ch;
     int x,y;
-    while(scanf(" %c",&ch)!=EOF && ch!='D')
+    while(ch!='D')
+    {
+    if(scanf(" %c",&ch)!=EOF)
     {
     if (ch == 'A')
     {
@@ -29,7 +31,7 @@ int main()
     }
     else if (ch == 'B'){
 
-        if(scanf("%d" "%d",&x,&y) !=EOF)
+        if(scanf("%d",&x)!=EOF && scanf("%d",&y) !=EOF)
         {
         has_path(mat,x,y);
         printf("\n");
@@ -37,11 +39,12 @@ int main()
     }
     else if (ch == 'C')
     {
-        if(scanf("%d" "%d",&x,&y) !=EOF)
+        if(scanf("%d",&x)!=EOF && scanf("%d",&y) !=EOF)
         {
         printf("%d",shortest_path(mat,x,y));
         printf("\n");
         }
+    }
     }
     }
     return 0;
